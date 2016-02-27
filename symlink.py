@@ -19,5 +19,6 @@ def create_symlinks(srcdir, dstdir, prefix='', excludes=None):
 
 if __name__ == '__main__':
     create_symlinks(SYNCPATH, HOMEDIR, excludes=['dotfiles'])
-    create_symlinks(SYNCPATH + 'dotfiles/', HOMEDIR, excludes=['beetsconfig','.config', 'R'])
+    create_symlinks(SYNCPATH + 'dotfiles/', HOMEDIR, excludes=['beetsconfig','.config', '.local', 'R'])
     create_symlinks(SYNCPATH + 'dotfiles/', HOMEDIR, prefix='.config')
+    create_symlinks(SYNCPATH + 'dotfiles/', HOMEDIR, prefix='.local/share')
