@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from os import listdir, unlink, symlink
 from os.path import join, islink, expanduser
 
